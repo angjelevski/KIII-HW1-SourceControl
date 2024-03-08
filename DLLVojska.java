@@ -249,25 +249,21 @@ public class DLLVojska {
     }
 
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
-
         int n = input.nextInt();
 
         DLL<Integer> lista = new DLL<>();
-        for(int i=0;i<n;i++) {
+        for (int i=0; i<n; ++i) {
             lista.insertLast(input.nextInt());
         }
 
         int a = input.nextInt();
         int b = input.nextInt();
-
         int c = input.nextInt();
         int d = input.nextInt();
 
         DLL<Integer> result = vojska(lista, a, b, c, d);
-
         System.out.println(result);
-
     }
+
 }
